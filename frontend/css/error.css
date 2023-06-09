@@ -1,0 +1,81 @@
+.error_main_div{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: #f67d03;
+}
+
+.error_message_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error_message_div h1{
+  font-size: 60px;
+  color: rgb(237, 237, 237);
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ cursor: default;
+}
+
+.error_message_div h4{
+    margin-top: 5px;
+  color:azure;
+  cursor: default;
+}
+
+
+.error_message_div button{
+    margin-top: 50px;
+  width: 150px;
+  height: 30px;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #FF8811;
+color:white;
+font-size: 15px;
+cursor: pointer;
+transition: 0.1s all;
+}
+
+.error_message_div button:hover{
+    box-shadow: 1px 1px 3px rgb(213, 213, 213);
+}
+
+@media only screen and (min-width:500px){
+    .error_message_div h1{
+        font-size:74px;
+    }
+    .error_message_div h4{
+        font-size: 17px;
+    }
+    .error_message_div button{
+      transform: scale(1.1);
+    }
+}
+
+@media only screen and (min-width:1500px){
+  .error_message_div h1{
+    font-size: 80px;
+  }
+  .error_message_div h4{
+    font-size: 20px;
+  }
+  .error_message_div button{
+    transform: scale(1.05);
+  }
+}
+
+@media only screen and (min-width:2000px){
+  .error_message_div h1{
+    font-size: 110px;
+  }
+  .error_message_div h4{
+    font-size: 30px;
+  }
+  .error_message_div button{
+    transform: scale(1.2);
+  }
+}

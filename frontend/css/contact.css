@@ -1,0 +1,196 @@
+.contact_main_div{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to bottom,rgb(219, 16, 233),rgb(40, 23, 116));
+}
+
+.contact_body{
+    width: 70%;
+    height: 97%;
+    background:linear-gradient(to right,rgb(58, 58, 58),rgb(40, 38, 38));
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgb(37, 37, 37);
+}
+
+.contact_info_div{
+    width: 40%;
+    border: 2px solid white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+}
+
+#contact_info_title{
+    margin: 0 auto;
+    font-family:sans-serif;
+    margin-top: 20px;
+    font-size: 40px;
+  color: white;
+}
+
+
+.contact_info_email{
+    display: flex;
+    align-items: center;
+    color: white;
+  margin-top: 30px;
+}
+.contact_info_email label{
+    font-size: 35px;
+    margin-left: 20px;
+}
+.contact_info_email p{
+  margin-left:20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 19px;
+  color: rgb(219, 219, 219);
+}
+
+.contact_info_phone{
+    display: flex;
+    align-items: center;
+    color: white;
+  margin-top: 30px;
+}
+
+.contact_info_phone label{
+    font-size: 30px;
+    margin-left: 23px;
+}
+
+.contact_info_phone p{
+    margin-left:20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    color: rgb(219, 219, 219);
+  }
+
+.contact_info_social{
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ margin-top: 150px;
+}
+
+.contact_info_social a{
+    font-size: 45px;
+    margin: 25px;
+    cursor: pointer;
+}
+
+#facebook{
+ color: rgb(49, 49, 251);
+}
+#instagram{
+    color: rgb(255, 60, 60);
+}
+
+#twitter{
+    color:rgb(54, 54, 250);
+}
+#github{
+    color: purple;
+}
+
+
+.contact_message_div{
+    width: 60%;
+    border: 2px solid rgb(252, 252, 252);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_message_body{
+    width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: first baseline;
+}
+
+#contact_message_title{
+    color: white;
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    cursor: default;
+    font-family:sans-serif;
+}
+
+.textarea_div{
+    width: 100%;
+  display: flex;
+  justify-content: center;
+ margin-top: 40px;
+}
+.textarea_div textarea{
+    width: 60%;
+    max-width: 60%;
+    max-height: 190px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  background-color: rgb(239, 239, 239);
+  box-shadow: 1px 1px 5px white;
+  border: none;
+  outline: none;
+}
+
+.textarea_div textarea:focus{
+    border: none;
+    outline: none;
+}
+.contact_message_button{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  margin-top: 30px;
+}
+
+.contact_message_checked{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+  margin-top: 30px;
+}
+.contact_message_checked button{
+  width: 50px;
+  font-size: 25px;
+  color: rgb(0, 184, 0);
+  background-color: rgb(226, 226, 226);
+}
+
+.contact_message_button button{
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 10px;
+    background:linear-gradient(to right,white,rgb(197, 196, 196));
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.contact_message_button button:hover{
+    transform: scale(1.07);
+}
+
+.contact_errormessage{
+    color:white;
+    background:linear-gradient(to right,red,rgb(248, 54, 19));
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.textarea_div textarea::-webkit-scrollbar{
+    display: none;
+}

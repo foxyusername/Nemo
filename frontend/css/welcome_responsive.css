@@ -1,0 +1,215 @@
+
+@media only screen and (min-width:400px){
+
+    .welcome_body_description {
+    width: 70%; 
+    text-align: center;
+    }
+
+    .welcome_body_description p{
+     font-size: 25px;
+    }
+  
+}
+
+
+@media only screen and (min-width:600px){
+    .welcome_navbar_p p{
+        font-size: 30px;
+        margin-left: 15px;
+    }
+    .welcome_logo{
+    font-size: 30px;
+    }
+
+    .welcome_body_title h1{
+        font-size: 80px;
+    }
+
+    .welcome_body_description {
+    width: 55%; 
+    }
+
+    .welcome_body_description p{
+     font-size: 27px;
+    }
+
+    .welcome_button_div button{
+  width: 70%;
+  height: 40px;
+  font-size: 30px;
+    }
+  
+}
+
+
+
+@media only screen and (max-height:610px){
+    .welcome_navbar_p p{
+        font-size: 23px;
+        margin-left: 20px;
+    }
+    .welcome_logo{
+    font-size: 25px;
+    }
+
+    .welcome_body_title h1{
+        font-size: 70px;
+    }
+
+    .welcome_body_description {
+    width: 60%; 
+    margin-top: 35px;
+    }
+
+    .welcome_body_description p{
+     font-size: 20px;
+    }
+
+    .welcome_button_div {
+        margin-top: 130px;
+    }
+
+    .welcome_button_div button{
+  width: 50%;
+  height: 40px;
+  font-size: 20px;
+    }
+  
+}
+
+
+@media only screen and (min-width:1200px){
+    .welcome_navbar_p p{
+        font-size: 24px;
+        margin-left: 15px;
+        margin-right: 8px;
+
+    }
+    .welcome_logo{
+    font-size: 25px;
+    }
+
+    .welcome_body_title{
+    width: 40%;
+    margin-top: -50px;
+    }
+
+    .welcome_body_title h1{
+        font-size:90px;
+    }
+
+    .welcome_body_description {
+    width: 35%; 
+    margin-top: 30px;
+    }
+
+    .welcome_body_description p{
+     font-size: 23px;
+     color: rgb(196, 194, 194);
+    }
+
+    .welcome_button_div {
+        margin-top: 130px;
+    }
+
+    .welcome_button_div button{
+  width: 35%;
+  height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+    }
+  
+}
+
+
+@media only screen and (min-width:1600px){
+    .welcome_navbar_p p{
+        font-size: 24px;
+        margin-left: 15px;
+        margin-right: 8px;
+
+    }
+    .welcome_logo{
+    font-size: 25px;
+    }
+
+    .welcome_body_title{
+    width: 30%;
+    margin-top: -50px;
+    }
+
+    .welcome_body_title h1{
+        font-size:100px;
+    }
+
+    .welcome_body_description {
+    width: 35%; 
+    margin-top: 30px;
+    }
+
+    .welcome_body_description p{
+     font-size: 23px;
+     color: rgb(196, 194, 194);
+    }
+
+    .welcome_button_div {
+        margin-top: 130px;
+    }
+
+    .welcome_button_div button{
+  width: 40%;
+  height: 40px;
+  font-size: 25px;
+  cursor: pointer;
+    }
+  
+}
+
+
+
+@media only screen and (min-width:2500px){
+    .welcome_navbar{
+        height: 90px;
+    }
+    .welcome_navbar_p p{
+        font-size: 45px;
+        margin-left: 20px;
+        margin-right: 15px;
+
+    }
+    .welcome_logo{
+    font-size: 40px;
+    }
+
+    .welcome_body_title{
+    width: 30%;
+    margin-top: -110px;
+    }
+
+    .welcome_body_title h1{
+        font-size:140px;
+    }
+
+    .welcome_body_description {
+    width: 35%; 
+    margin-top: 70px;
+    }
+
+    .welcome_body_description p{
+     font-size: 35px;
+     color: rgb(196, 194, 194);
+    }
+
+    .welcome_button_div {
+        margin-top: 130px;
+    }
+
+    .welcome_button_div button{
+  width: 35%;
+  height: 60px;
+  font-size: 40px;
+  cursor: pointer;
+    }
+  
+}

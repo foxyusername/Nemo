@@ -1,0 +1,164 @@
+.welcome_main_div{
+    width: 100vw;
+    height: 100vh;
+  background:linear-gradient(to right,#0202f9,#f60202);
+}
+
+.welcome_header{
+    width: 100%;
+    display: flex;
+    background-color: rgb(239, 239, 239);
+}
+.welcome_logo{
+    font-size: 25px;
+    color: rgb(5, 5, 5);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+.welcome_navbar{
+    display: flex;
+    width: 100%;
+   align-items: center;
+}
+.welcome_navbar_p{
+    font-size: 18px;
+    color: rgb(14, 14, 14);
+    display: flex;
+    margin-left: auto;
+    margin-right: 5px;
+}
+.welcome_navbar_p p{
+    margin-left: 13px;
+}
+
+.welcome_body{
+    width: 100vw;
+    height:89% ;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+}
+
+.welcome_body_title{
+    font-size: 25px;
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  text-align: center;
+ font-family:sans-serif;
+}
+
+.welcome_body_title h1{
+    color: rgb(255, 226, 226);
+ cursor: default;
+ text-shadow: 1px 1px 3px rgb(26, 26, 26);
+}
+
+.welcome_body_description{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  margin-top: 30px;
+  width: 70%;
+  text-align: center;
+}
+.welcome_body_description p{
+    color: rgb(208, 208, 208);
+    font-size: 17px;
+    cursor: default;
+}
+.welcome_button_div{
+width: 55%;
+    margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.welcome_button_div button{
+    width: 100%;
+    height: 28px;
+    border-radius: 5px;
+    font-size: 18px;
+  transition:all 0.1s ease-in-out;
+  background: linear-gradient(to right,rgb(255, 255, 255),rgb(123, 123, 123));
+  border: 2px solid white;
+  cursor: pointer;
+  color: rgb(33, 33, 33);
+}
+
+#welcome_button:hover{
+    background: linear-gradient(to right,black,black);
+    color: white;
+ }
+
+.welcome_all_div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+#first_p{
+position: relative;
+cursor: pointer;
+}
+
+#first_p::before {
+    content: '';
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  #first_p:hover::before {
+    transform: scaleX(1);
+  }
+  
+  #second_p{
+    position: relative;
+    cursor: pointer;
+  }
+
+  #second_p::before {
+    content: '';
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  #second_p:hover::before {
+    transform: scaleX(1);
+  }
+
+  #third_p{
+    position: relative;
+    cursor: pointer;
+  }
+
+  #third_p::before {
+    content: '';
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform: scaleX(0);
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  #third_p:hover::before {
+    transform: scaleX(1);
+  }

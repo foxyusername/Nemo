@@ -1,0 +1,163 @@
+.login_main_div{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    background-image: url('../images/11cb20be833235319c98dffa7475252e.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_div{
+    width: 90%;
+    height: 80%;
+    background-color: whitesmoke;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login_div_error{
+    width: 90%;
+    height: 80%;
+    background-color: whitesmoke;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 5px solid rgb(255, 0, 0);
+}
+
+.login_title{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 13%;
+}
+
+.login_title h1{
+ font-family:'Courier New', Courier, monospace;
+ cursor: default;
+}
+
+.login_input_div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.login_username{
+    width: 90%;
+    border-bottom: 1px solid rgb(5, 5, 5);
+    display: flex;
+}
+.login_username p{
+    margin-top: 9px;
+    margin-right: -5px;
+}
+.login_username input{
+  width: 90%;
+  height: 30px;
+ margin-top: 4px;
+border: none;
+background-color:whitesmoke;
+
+margin-left: 15px;
+}
+
+.login_username input:focus{
+    outline: none;
+}
+
+.login_password{
+width: 90%;
+border-bottom: 1px solid rgb(5, 5, 5);
+    display: flex;
+}
+.login_password input{
+    width: 90%;
+  height: 30px;
+ margin-top: 40px;
+border: none;
+background-color:whitesmoke;
+margin-left: 15px;
+}
+
+.login_password input:focus{
+    outline: none;
+}
+
+.login_password p{
+margin-top: 47px;
+ margin-right: -5px;
+}
+
+.forgot_password{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content:last baseline;  
+}
+
+.forgot_password p{
+    margin-left: auto;
+    margin-right: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.login_button{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.login_button button{
+    width: 80%;
+    height: 35px;
+    border-radius: 30px;
+    background: linear-gradient(to right, #2D82B7, #FF66B3);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login_google_div img{
+   width: 25px;
+   height: 25px;
+   margin-top: 15px;
+   cursor: pointer;
+}
+.login_google_div{
+    margin-top: 50px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+align-items: center;
+}
+
+.login_google_div p{
+    font-size: 18px;
+    cursor: default;
+}
+#or{
+    margin-top: 5px;
+font-size: 16px;
+cursor: default;
+color: rgb(81, 81, 81);
+}
+.login_google_div a{
+    font-size: 16px;
+    margin-top: 3px;
+    color: rgb(52, 85, 255);
+}
+
+#errormessage{
+    margin-top: 5px;
+    font-size: 17px;
+    color: rgb(46, 46, 46);
+}

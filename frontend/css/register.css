@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.register_main_div{
+    width: 98.9vw;
+    height: 98.9vh;
+    display: flex;
+ flex-direction: column;
+    background-color: azure;
+  cursor: default;
+}
+.register_logo{
+   width: 100%;
+   display: flex;
+   margin-top: 80px;
+
+}
+
+.register_logo h1{
+    font-size: 4em;
+    color: rgb(72, 30, 255);
+    
+}
+
+.right_left_sides{
+    width: 100%;
+    height:100%;
+    display: flex;
+}
+
+.left_side{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.left_side .text_box{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.left_side .text_box h1{
+    font-size: 4.7em;
+    color:#8661C1;
+    margin-left: 143px;
+
+}
+.left_side .text_box .p_text{
+width: 60%;
+justify-content: center;
+display: flex;
+margin-top: 30px;
+margin-left: 43px;
+}
+.left_side .text_box .p_text p{
+    font-size: 15px;
+    font-family: sans-serif;
+    color:#57695f;
+}
+
+.left_side .signup_options{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: first baseline;
+    font-size: 20px;
+    margin-left: 118px;
+    margin-top: 90px;
+    font-family: sans-serif;
+}
+#signup_button{
+margin-top:5px ;
+    margin-left: 25px;
+  color: rgb(16, 27, 247);
+}
+
+.right_side{
+    width: 50%;
+    height: 100%;
+}
+.register_div{
+    width: 80%;
+    height: 90%;
+    border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfbfb;
+  box-shadow: 1px 1px 7px rgb(59, 59, 59);
+}
+.register_div div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+}
+.register_div button{
+    width: 28%;
+  height: 35px;
+  border-radius: 10px;
+  background-color:#ffffff ;
+ font-size: 20px;
+ font-family: sans-serif;
+transition: all ease-in-out 0.2s;
+}
+
+.register_div div label{
+    font-size: 30px;
+    margin-right: 10px;
+}
+.register_div div input{
+    width: 70%;
+    height: 50px;
+    padding-left: 5px;
+    font-size: 15px;
+}
+
+.register_div button:hover{
+  background-color: rgb(2, 2, 2);
+  color: white;
+cursor: pointer;
+}
+
+#register_eye{
+  margin-left: 10px;
+    font-size: 25px;
+    transition: all 0.2s;
+}
+
+.register_password_div label{
+    margin-left: 40px;
+}
+
+#register_eye:hover{
+    transform: scale(0.95);
+ cursor: pointer;
+}
