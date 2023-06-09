@@ -11,7 +11,7 @@ const [password,setpassword]=useState('');
 const history=useNavigate();
 
   useEffect(()=>{
-    axios.post('http://localhost:3000/getpassword',{token: localStorage.getItem('token')})
+    axios.post(''+process.env.VITE_DOMAIN+'/getpassword',{token: localStorage.getItem('token')})
     .then((res)=>{
         setpassword(res.data.password);
         console.log(res.data.password);

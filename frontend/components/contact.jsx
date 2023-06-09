@@ -26,7 +26,7 @@ function Contact({email,phone,city,facebook,instagram,twitter,github,checkmark})
       if(localStorage.getItem('username')){
   
       if(message.length>0){
-        axios.post('http://localhost:3000/feedback',{
+        axios.post(''+process.env.VITE_DOMAIN+'/feedback',{
           message:message,
           date:currentDate,
           username:localStorage.getItem('username')
