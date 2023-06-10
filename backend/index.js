@@ -8,7 +8,7 @@ const axios=require('axios');
 require('dotenv').config();
 
 app.use(cors({
-  origin:"http://localhost:5173"
+  origin:'nemo-production-1139.up.railway.app'
 }));
 
 app.use(express.json());
