@@ -16,15 +16,6 @@ import Welcomepage from '../components/Welcome';
  import Contact from "../components/contact";
 //import components//
 
-//const Error=lazy(()=>import('../components/404'));
-//const Login=lazy(()=>import('../components/Login'));
-//const Protect=lazy(()=>import('../configuration/protect'));
-//const About=lazy(()=>import('../components/about'));
-//const Welcomepage=lazy(()=>import('../components/Welcome'));
-//const Contact=lazy(()=>import('../components/contact'));
-//const Chat=lazy(()=>import('../components/chat'));
-//const Register=lazy(()=>import('../components/Register')); 
-
 function App() {
 
 return <Router>
