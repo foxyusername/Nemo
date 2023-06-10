@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
 import {useNavigate} from "react-router-dom"
-import {PrettyChatWindow} from "react-chat-engine-pretty"
+ import {ChatEngine} from "react-chat-engine";
 import "../css/chat.css";
 
  function Chat({load}){
@@ -27,7 +27,7 @@ const history=useNavigate();
 
     if(password.length>0){
         return <div style={{height:"100vh"}}>
-            <PrettyChatWindow 
+            <ChatEngine
               projectId="938a61a6-63d6-4b4a-8910-33748762d8cf"
               username={localStorage.getItem('username')}
               secret={password}
