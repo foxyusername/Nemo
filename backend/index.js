@@ -8,7 +8,7 @@ const axios=require('axios');
 require('dotenv').config();
 
 app.use(cors({
-  origin:'nemo-production-1139.up.railway.app'
+  origin:'https://nemo-foxyusername.vercel.app/'
 }));
 
 app.use(express.json());
