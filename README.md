@@ -11,17 +11,31 @@ Nemo Messaging App is a Node.js, React, MySQL, and ChatEngine based messaging ap
 
 4. navigate to backend (cd backend):
 5. install neccesary backend dependencies (npm install --legacy-peer-deps):
-6. run the server (npm start):
-7. navigate to frontend (cd .. => cd frontend):
-8. install dependencies (npm install --legacy-peer-deps):
-9. run the react application (npm run dev)
+7. run the server (npm start):
+8. navigate to frontend (cd .. => cd frontend):
+9. install dependencies (npm install --legacy-peer-deps):
+10. run the react application (npm run dev)
 
 ## Customization
 ❤️Pls feel free to customize websites UI and Logic however you would like❤️
 
-## ⚠️Warnign⚠️
+## .env files
+This application uses .env files for security reasons. here is instructions on how you can setup your .env file
 
-Website uses Free plan for Database and ChatEngine, It means that website will work for 21 days,it will have a limit of 10 users and 1000 messages.
-these numbers will refresh automatically after new month starts
+1.locate to backend directory and install .env (npm install .env)
+
+2.open file called .env.example and fill out the fields with your values (required!)
+
+3.finally when you are done rename current file to .env and it will work perfectly
+
+
+
+4.locate to frontend directory
+
+5.open file called .env.example and fill out the fields with your values (required!)
+
+6.finally when you are done rename current file to .env and it will work perfectly
+
+## ⚠️Warnign⚠️
 
 Note that this website was deployed on 2023-11-6. If any error occur with dependency updates feel free to email me on: jamaspishvilinika@icloud.com
