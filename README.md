@@ -4,9 +4,9 @@
 ## Introduction
 Nemo Messaging App is a Node.js, React, MySQL, and ChatEngine based messaging application. It allows users to communicate with each other in real-time. This README file provides instructions on how to set up and use the application on your local machine.
 
-!Assuming that you already setup your MYSQL database have acces to Private_key and Project_id from ChatEngine api.!
+!Assuming that you already setup your MYSQL database have acces to Private_key and Project_id from ChatEngine api. if not then you can sign up here =>http://chatengine.io!
 
-## Installation
+## 1) Installation
 
 1. Clone the repository to your local machine:
 2. Navigate to the project folder: 
@@ -18,10 +18,7 @@ Nemo Messaging App is a Node.js, React, MySQL, and ChatEngine based messaging ap
 9. install dependencies (npm install --legacy-peer-deps):
 10. run the react application (npm run dev)
 
-## Customization
-❤️Pls feel free to customize websites UI and Logic however you would like❤️
-
-## .env files
+## 2) .env files
 This application uses .env files for security reasons. here is instructions on how you can setup your .env file
 
 1.locate to backend directory and install .env (npm install .env)
@@ -37,6 +34,38 @@ This application uses .env files for security reasons. here is instructions on h
 5.open file called .env.example and fill out the fields with your values (required!)
 
 6.finally when you are done rename current file to .env and it will work perfectly
+
+
+## 3) Mysql table setup
+
+third and final step is to setup three database table's (copy and paste the code inside of your query execution file)
+
+#### !!Do not try to change anything in these queries until you are familiar with them, otherwise it can cause unexpected errors!!
+
+1) CREATE TABLE `feedback` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `message` longtext NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `date` varchar(20) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+2) CREATE TABLE `googleauth` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `status` varchar(100) DEFAULT 'google',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+3) CREATE TABLE `users` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(300) NOT NULL,
+  `passcode` longtext NOT NULL,
+  `room` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `username_UNIQUE` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 
 ## ⚠️Warnign⚠️
 
