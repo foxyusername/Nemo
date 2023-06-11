@@ -6,7 +6,7 @@ export default defineConfig({
     react(),
   ],
   optimizeDeps: {
-    include: ['chat-engine'],
+    include: ['react-chat-engine'],
   },
   build: {
     chunkSizeWarningLimit: 921600,  // Set your desired chunk size limit here
