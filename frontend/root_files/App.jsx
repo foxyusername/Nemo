@@ -19,6 +19,7 @@ import Welcomepage from '../components/Welcome';
 function App() {
 
 return <Router>
+  {console.log('no error')}
        <Suspense fallback={<h1>loading...</h1>}>
     <Routes>  
       <Route path='/Nemo-login' element={<Login lock={<FontAwesomeIcon icon={faLock} />} user={<FontAwesomeIcon icon={faUser} />}/>} />
