@@ -2,7 +2,7 @@
 # Nemo Messaging App
 
 ## Introduction
-Nemo Messaging App is a Node.js, React, MySQL, and ChatEngine based messaging application. It allows users to communicate with each other in real-time. This README file provides instructions on how to set up and use the application on your local machine.
+Nemo Messaging App is a Node.js, React, MySQL, and ChatEngine based customizable messaging application. It allows users to make website completely their own by connecting desired database and server. This README file provides instructions on how to set up and use the application on your local machine.
 
 !Assuming that you already setup your MYSQL database have acces to Private_key and Project_id from ChatEngine api. if not then you can sign up here =>http://chatengine.io!
 
@@ -21,7 +21,7 @@ Nemo Messaging App is a Node.js, React, MySQL, and ChatEngine based messaging ap
 ## 2) .env files
 This application uses .env files for security reasons. here is instructions on how you can setup your .env file
 
-1.locate to backend directory and install .env (npm install .env)
+1.locate to backend directory
 
 2.open file called .env.example and fill out the fields with your values (required!)
 
