@@ -4,7 +4,7 @@
 ## Introduction
 Nemo Messaging App is a Node.js, React, MySQL, and ChatEngine based customizable messaging application. It allows users to make website completely their own by connecting desired database and server. This README file provides instructions on how to set up and use the application on your local machine.
 
-!Assuming that you already setup your MYSQL database have acces to Private_key and Project_id from ChatEngine api. if not then you can sign up here =>http://chatengine.io!
+!Assuming that you already setup your firebase and MYSQL database have acces to Private_key and Project_id from ChatEngine api. if not then you can sign up here =>http://chatengine.io!
 
 ## 1) Installation
 
@@ -35,10 +35,17 @@ This application uses .env files for security reasons. here is instructions on h
 
 6.finally when you are done rename current file to .env and it will work perfectly
 
+## 3) Firebase configuration
 
-## 3) Mysql table setup
+1)locate to frontend directory
 
-third and final step is to setup three database table's (copy and paste the code inside of your query execution file)
+2)open firebase.js file
+
+3)fill the "example..." string with your firebase values
+
+## 4) Mysql table setup
+
+fourth and final step is to setup three database table's (copy and paste the code inside of your query execution file)
 
 #### !!Do not try to change anything in these queries until you are familiar with them, otherwise it can cause unexpected errors!!
 
@@ -69,4 +76,6 @@ third and final step is to setup three database table's (copy and paste the code
 
 ## ⚠️Warnign⚠️
 
-Note that this website was deployed on 2023-11-6. If any error occur with dependency updates feel free to email me on: jamaspishvilinika@icloud.com
+1)It is neccesary to fill all the needed fields with your values as explained, else you will get errors
+
+2)Note that this website was deployed on 2023-11-6. If any error occur with dependency updates feel free to email me on: jamaspishvilinika@icloud.com
