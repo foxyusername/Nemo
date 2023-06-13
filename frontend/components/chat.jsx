@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import axios from "axios";
 import {useNavigate} from "react-router-dom"
- import {ChatEngine} from "react-chat-engine";
 import "../css/chat.css";
+import {PrettyChatWindow} from "react-chat-engine-pretty"
 
  function Chat({load}){
  
@@ -11,7 +11,7 @@ const [password,setpassword]=useState('');
 const history=useNavigate();
 
   useEffect(()=>{
-    axios.post(''+process.env.VITE_DOMAIN+'/getpassword',{token: localStorage.getItem('token')})
+    axios.post(''+import.meta.env.VITE_SERVER_URL+'/getpassword',{token: localStorage.getItem('token')})
     .then((res)=>{
         setpassword(res.data.password);
         console.log(res.data.password);
@@ -27,8 +27,8 @@ const history=useNavigate();
 
     if(password.length>0){
         return <div style={{height:"100vh"}}>
-            <ChatEngine
-              projectId="938a61a6-63d6-4b4a-8910-33748762d8cf"
+            <PrettyChatWindow
+              projectId={import.meta.env.VITE_CHATENGINE_API_PROJECTID}
               username={localStorage.getItem('username')}
               secret={password}
               style={{height:'100%'}}

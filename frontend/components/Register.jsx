@@ -35,7 +35,7 @@ const {register,handleSubmit,formState: {errors}}=useForm({
 
 function onsubmit(data){
   console.log(data.username);
-  axios.post(''+process.env.VITE_DOMAIN+'/insertuser',{
+  axios.post(''+import.meta.env.VITE_SERVER_URL+'/insertuser',{
     username: data.username,
     password: data.password
   }).catch((err)=>console.log(err)).then((res)=>{

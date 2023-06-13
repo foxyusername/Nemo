@@ -23,7 +23,7 @@ useEffect(()=>{
 
 function submited(){
 if(login_username.length>0 && login_password.length>0){
-    axios.post(''+process.env.VITE_DOMAIN+'/loginuser',{username: login_username, password: login_password}).then((res)=>{
+    axios.post(''+import.meta.env.VITE_SERVER_URL+'/loginuser',{username: login_username, password: login_password}).then((res)=>{
         console.log(res)
         if(res.data==='notFound' || res.data==="error"){
           seterrormessage("Couldn't find an account ");
@@ -42,7 +42,7 @@ if(login_username.length>0 && login_password.length>0){
 const google=()=> {  
   signInWithPopup(auth, provider).then((res)=>{
 
-   axios.post(''+process.env.VITE_DOMAIN+'/insertgoogleuser',
+   axios.post(''+import.meta.env.VITE_SERVER_URL+'/insertgoogleuser',
    {username: res._tokenResponse.displayName, secret: "GoogleAuth"}).then((res)=>{
    localStorage.setItem('token',res.data);
    history('/Nemo-home');
