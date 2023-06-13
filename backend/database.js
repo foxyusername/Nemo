@@ -1,7 +1,19 @@
-const mysql=require('mysql2');
+const mysql = require('mysql2');
+require('dotenv').config();
 
- const url='mysql://'+process.env.MYSQLUSER+':'+process.env.MYSQLPASSWORD+'@'+process.env.MYSQLHOST+':'+process.env.MYSQLPORT+'/'+process.env.MYSQLDATABASE+'';
+const { MYSQLHOST, MYSQLUSER, MYSQLPASSWORD, MYSQLDATABASE } = process.env;
 
- const pool=mysql.createPool(url);
+// Check if any of the environment variables are empty
+if (!MYSQLHOST || !MYSQLUSER || !MYSQLPASSWORD || !MYSQLDATABASE) {
+  console.error('Missing or empty environment variables. Please set .env variables to their values ');
+ process.exit(1);
+}
 
-module.exports=pool;
+const pool = mysql.createPool({
+  host: MYSQLHOST,
+  user: MYSQLUSER,
+  password: MYSQLPASSWORD,
+  database: MYSQLDATABASE
+});
+
+module.exports = pool;

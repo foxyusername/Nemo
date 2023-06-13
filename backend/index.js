@@ -7,9 +7,7 @@ const jwt=require('jsonwebtoken');
 const axios=require('axios');
 require('dotenv').config();
 
-app.use(cors({
-  origin:'https://nemo-foxyusername.vercel.app/'
-}));
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -26,11 +24,12 @@ app.post('/insertuser',(req,res)=>{
         if(err){
            res.send('error');
         }else{
+          console.log('next');
             axios.put('https://api.chatengine.io/users/',{username:req.body.username,secret: req.body.password},
-            {headers: {'private-key': process.env.PRIVATE_KEY}}
+            {headers: {'private-key': process.env.CHATENGINE_API_KEY}}
             
             ).then((res)=>console.log(res.data)).catch((err)=>console.log(err))
-            const token=jwt.sign({username: req.body.username,password: req.body.password},process.env.JWT_SECRET,{expiresIn: '10000000m'});
+            const token=jwt.sign({username: req.body.username,password: req.body.password},process.env.JWTSECRET,{expiresIn: '10000000m'});
             res.send(token);
             //console.log(token);
         }
@@ -54,7 +53,7 @@ pool.query(query,[req.body.username],(err,result)=>{
     bcrypt.compare(req.body.password,result[0].passcode).then((match)=>{
       if(match){
 
-        const token=jwt.sign({username: req.body.username,password: req.body.password},process.env.JWT_SECRET,{expiresIn:'10000000m'});
+        const token=jwt.sign({username: req.body.username,password: req.body.password},process.env.JWTSECRET,{expiresIn:'10000000m'});
        res.status(200).send(token);
       }else{
         res.send('error');
@@ -67,8 +66,7 @@ pool.query(query,[req.body.username],(err,result)=>{
 
 app.post('/getpassword',(req,res)=>{
   console.log(req.body.token);
-  console.log(process.env.JWT_SECRET);
-  let tokenvalue=jwt.verify(req.body.token,process.env.JWT_SECRET);
+  let tokenvalue=jwt.verify(req.body.token,process.env.JWTSECRET);
   res.send(tokenvalue);
   console.log(tokenvalue);
 })
@@ -92,10 +90,10 @@ app.post('/insertgoogleuser',(req,res)=>{
     }
    })
 
-   const token=jwt.sign({username: req.body.username,password: req.body.secret},process.env.JWT_SECRET,{expiresIn:'10000000m'});
+   const token=jwt.sign({username: req.body.username,password: req.body.secret},process.env.JWTSECRET,{expiresIn:'10000000m'});
   res.send(token);
    axios.put('https://api.chatengine.io/users/',{username:req.body.username,secret: req.body.secret},
-        {headers: {'private-key': process.env.PRIVATE_KEY}})
+        {headers: {'private-key': process.env.CHATENGINE_API_KEY}})
 })
 
 app.post('/feedback',(req,res)=>{
@@ -107,4 +105,9 @@ app.post('/feedback',(req,res)=>{
       res.send('sent succesfully');
     }
   })
+})
+
+
+app.listen(process.env.LOCALHOST_PORT,()=>{
+  console.log('congratulations server started succesfully on port'+process.env.LOCALHOST_PORT);
 })
