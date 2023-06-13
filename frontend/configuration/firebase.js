@@ -7,13 +7,13 @@ import {getAuth,GoogleAuthProvider,signInWithPopup} from "firebase/auth"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBZAy31FpmVpjcjU13RHVEXgTYSFBM8qxA",
-  authDomain: "nemo-e121d.firebaseapp.com",
-  projectId: "nemo-e121d",
-  storageBucket: "nemo-e121d.appspot.com",
-  messagingSenderId: "1043140504297",
-  appId: "1:1043140504297:web:a97614a4f66dbf0b221e78",
-  measurementId: "G-039HEPZC9C"
+  apiKey: "example...",
+  authDomain: "example...",
+  projectId: "example...",
+  storageBucket: "example...",
+  messagingSenderId: "example...",
+  appId: "example...",
+  measurementId: "example.."
 };
 
 //!paste in your firebase values!
